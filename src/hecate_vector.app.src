@@ -1,0 +1,18 @@
+{application, hecate_vector, [
+    {description, "In-BEAM HNSW vector index for Hecate (Rustler NIF)"},
+    {vsn, "0.1.0"},
+    {registered, [hecate_vector_sup, hecate_vector_index_sup]},
+    {mod, {hecate_vector_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        crypto,
+        rustler
+    ]},
+    {env, []},
+    {modules, []},
+    {licenses, ["Apache-2.0"]},
+    {links, [
+        {"Codeberg", "https://codeberg.org/hecate-social/hecate-vector"}
+    ]}
+]}.
